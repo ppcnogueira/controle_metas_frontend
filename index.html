@@ -28,16 +28,17 @@
         </div>
 
         <!-- Dados para cálculo das metas -->
+    <div class="controle-metas">
         <div class="base-geral">
-            <p>Informe o número total de processos na base de ativos:</p><input type="number" name="basegeral"
+            <p>Número total de processos na base de ativos:</p><input type="number" name="basegeral"
                 id="basegeral">
         </div>
         <div class="base-excecao">
-            <p>Informe o número total de processos que serão contabilizados como exceção:</p><input type="number"
+            <p>Número total de processos que serão contabilizados como exceção:</p><input type="number"
                 name="excecao" id="excecao">
         </div>
         <div class="base-acordos">
-            <p>Informe o número total de processos na base de acordos:</p><input type="number" name="baseacordos"
+            <p>Número total de processos na base de acordos:</p><input type="number" name="baseacordos"
                 id="baseacordos">
         </div>
         <div class="button-calcular">
@@ -45,6 +46,7 @@
             Calcular Meta de Acordos<input type="button" value="Calcular" onclick="calcularMetaacordo()"><br>
             Calcular Meta de Sem Custo e Outros Motivos<input type="button" value="Calcular" onclick="calcularMetasemcusto()"><br>
         </div>
+    </div>
         <br>
         <!-- Resultado das metas -->
         <div id="meta-imp">Resultado da meta de improcedência</div>
