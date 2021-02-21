@@ -43,13 +43,13 @@
         <div class="button-calcular">
             Calcular Meta de Improcedência<input type="button" value="Calcular" onclick="calcularMetaimp()"><br>
             Calcular Meta de Acordos<input type="button" value="Calcular" onclick="calcularMetaacordo()"><br>
-            Calcular Meta de Sem Custo<input type="button" value="Calcular" onclick="calcularMetasemcusto()"><br>
+            Calcular Meta de Sem Custo e Outros Motivos<input type="button" value="Calcular" onclick="calcularMetasemcusto()"><br>
         </div>
         <br>
         <!-- Resultado das metas -->
         <div id="meta-imp">Resultado da meta de improcedência</div>
         <div id="meta-acordo">Resultado da meta de acordos</div>
-        <div id="meta-semcusto">Resultado da meta de encerrados sem custo</div>
+        <div id="meta-semcusto">Resultado da meta de encerrados sem custo e outros motivos</div>
 
 
         <!-- Javascript -->
@@ -67,6 +67,30 @@
                 var meta_imp = calculo_imp * 0.018
                 var meta_imp_certa = meta_imp.toFixed(1)
                 res_imp.innerHTML = `A meta de improcedência é de ${meta_imp_certa} processos.`
+            }
+
+            function calcularMetaacordo(){
+                var num_acordo = window.document.getElementById('baseacordos')
+                var res_acordo = window.document.getElementById('meta-acordo')
+                var n_acordo = Number(num_acordo.value)
+                var meta_acordo = n_acordo * 0.091
+                var meta_certa_acordo = meta_acordo.toFixed(1)
+                res_acordo.innerHTML = `A meta de acordos é de ${meta_certa_acordo} processos`
+        }
+
+        function calcularMetasemcusto() {
+                var basegeral_semcusto = window.document.getElementById('basegeral')
+                var excecao_semcusto = window.document.getElementById('excecao')
+                var res_semcusto = window.document.getElementById('meta-semcusto')
+
+                var n1 = Number(basegeral_semcusto.value)
+                var n2 = Number(excecao_semcusto.value)
+
+                var calculo_semcusto = (n1 - n2)
+
+                var meta_semcusto = calculo_semcusto * 0.017
+                var meta_semcusto_certa = meta_semcusto.toFixed(1)
+                res_semcusto.innerHTML = `A meta de encerrados sem custo e outros motivos é de ${meta_semcusto_certa} processos.`
             }
         </script>
 </body>
