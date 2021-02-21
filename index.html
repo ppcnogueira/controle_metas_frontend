@@ -59,17 +59,15 @@
                 var excecao_imp = window.document.getElementById('excecao')
                 var res_imp = window.document.getElementById('meta-imp')
 
-                var n1_imp = Number(basegeral_imp.value)
-                var n2_imp = Number(excecao_imp.value)
+                var n1 = Number(basegeral_imp.value)
+                var n2 = Number(excecao_imp.value)
 
-                var calculo1_imp = (n1_imp - n2_imp)
+                var calculo_imp = (n1 - n2)
 
-                var meta_imp = calculo1_imp * 0.018
-                var meta_imp_certa = meta.toFixed(1)
+                var meta_imp = calculo_imp * 0.018
+                var meta_imp_certa = meta_imp.toFixed(1)
                 res_imp.innerHTML = `A meta de improcedência é de ${meta_imp_certa} processos.`
             }
-
         </script>
 </body>
-
 </html>
