@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Metas e Produtividade - Agnelli & Gomes</title>
+    <link rel="icon" href="imagens/icon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>        
+    <!-- início do header-->
+    <header>
+        <div class="titulo">
+            <h1>Controle de Metas e Produtividade 2021</h1>
+        </div>
+    </header>   
+    <!-- fim do header -->
+    <section>
+        <div class="metas-pade">
+            <p>Cálculo de metas PADE Indenizatória 2021</p>
+        </div>
+
+    <!-- Cálculo de improcedência -->
+        <div class="calc-impro">
+            <p>Meta de Improcedência</p>
+            <p>Número de processos na base</p><input type="number" name="totalbase" id="totalbase">
+            <p>Número de processos com exceção</p><input type="number" name="excecao" id="excecao"><br>
+            <input type="button" value="Calcular" onclick="calcularImp()">
+            <div id="res-impro">Resultado</div>
+        </div>
+
+    <!-- Cálculo de acordos -->
+        <div class="calc-acordo">
+            <p>Meta de Acordos</p>
+            <p>Número de processos na planilha do banco</p><input type="number" name="totalacordos" id="totalacordos">
+            <input type="button" value="Calcular" onclick="calcularAcordo()">
+            <div id="res-acordo">Resultado</div>
+        </div>
+    </section> 
+
+    <!-- Javascript -->
+    <script>
+        function calcularImp(){
+            var num1 = window.document.getElementById('totalbase')
+            var num2 = window.document.querySelector('input#excecao')
+            var res = window.document.getElementById('res-impro')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var sub = (n1 - n2)
+            var meta = sub * 0.018
+            var meta_certa_imp = meta.toFixed(2)
+            res.innerHTML = `A meta de improcedência é de ${meta_certa_imp} processos`
+        }
+        
+        function calcularAcordo(){
+            var num_acordo = window.document.getElementById('totalacordos')
+            var res_acordo = window.document.getElementById('res-acordo')
+            var n_acordo = Number(num_acordo.value)
+            var meta_acordo = n_acordo * 0.091
+            var meta_certa_acordo = meta_acordo.toFixed(2)
+            res_acordo.innerHTML = `A meta de acordos é de ${meta_certa_acordo} processos`
+        }
+        </script>
+</body>
+</html>
