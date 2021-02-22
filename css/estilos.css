@@ -14,11 +14,11 @@ body {
     height: 90px;
     padding-top: 20px;
     padding-left: 10px;
-    background-color: rgb(17, 51, 1);
+    background-image: linear-gradient(to right,rgb(17, 51, 1), green 130%);
 }
 
 
-.titulo h1 {
+.titulo h1 {    
     font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: 600;
@@ -27,15 +27,16 @@ body {
 }
 
 .metas-pade {
+    margin-left: 10px;
     display: inline-block;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
-    font-style: normal;
     color: rgb(255, 255, 255);
     margin-top: 10px;
     padding: 10px;
     background-color: rgb(17, 51, 1);
+    border-radius: 3px; 
 }
 
 .controle-metas {
@@ -71,6 +72,7 @@ body {
     display: inline-block;
     background-color: rgb(17, 51, 1);
     font-size: 16px;
+    font-weight: 100;
     color: #ffffff;
     padding: 5px;
     border-radius: 3px;    
@@ -80,6 +82,7 @@ body {
     display: inline-block;
     background-color: rgb(17, 51, 1);
     font-size: 16px;
+    font-weight: 100;
     color: #ffffff;
     padding: 5px;
     border-radius: 3px;      
@@ -89,6 +92,7 @@ body {
     display: inline-block;
     background-color: rgb(17, 51, 1);
     font-size: 16px;
+    font-weight: 100;
     color: #ffffff;
     padding: 5px;
     border-radius: 3px;      
@@ -96,7 +100,7 @@ body {
 
 .button-calcular input[type=button] {
     width: 80px;
-    font-size: 14px;
+    font-size: 15px;
 
 }
 
