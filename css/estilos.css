@@ -46,7 +46,7 @@ body {
 .controle-metas p{
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -66,6 +66,43 @@ body {
     padding-bottom: 20px;
 }
 
+.button-calcular .p1 {
+    margin-bottom: 5px;
+    display: inline-block;
+    background-color: rgb(17, 51, 1);
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 3px;    
+}
+
+.button-calcular .p2 {
+    display: inline-block;
+    background-color: rgb(17, 51, 1);
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 3px;      
+}
+.button-calcular .p3 {
+    margin-top: 5px;
+    display: inline-block;
+    background-color: rgb(17, 51, 1);
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 3px;      
+}
+
+.button-calcular input[type=button] {
+    width: 80px;
+    font-size: 14px;
+
+}
+
+.button-calcular input[type=button]:hover {
+    cursor: pointer;    
+}
 
 
 
