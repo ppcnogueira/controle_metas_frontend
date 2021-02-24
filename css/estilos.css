@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(208, 209, 207);
+    background-color: rgb(240, 242, 245);
 }
 
 .titulo {
@@ -46,7 +46,7 @@ body {
     display: inline-block;
     position: relative;
     left: 70%;
-    top: -400px;
+    top: -435px;
     margin-left: 10px;
     font-family: Calibri;
     font-weight: 500;
