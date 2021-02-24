@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(171, 175, 168);
+    background-color: rgb(208, 209, 207);
 }
 
 .titulo {
@@ -131,15 +131,22 @@ body {
 }
 
 .button-calcular input[type=button] {
-    margin-left: 15px;
-    background-color: rgb(216, 216, 216);
-    width: 80px;
-    font-size: 15px;
-
+    margin-left: 20px;
+    height: 20px;
+    padding: 2px 8px;
+    border: 1px solid #F3F3F3;
+    box-shadow: 0 0 0 1px #707070;
+    border-radius: 3px;
+    background: linear-gradient(top, #F2F2F2 0%, #EBEBEB 50%, #DDDDDD 51%, #CFCFCF 100%);
+    font: normal 13px sans-serif;
+    color: black;
+    text-decoration: none;
 }
 
 .button-calcular input[type=button]:hover {
-    cursor: pointer;    
+    border: 1px solid #ECF7FD;
+    box-shadow: 0 0 0 2px #1d1d1d;
+    background: linear-gradient(top, #EAF6FD 0%, #D9F0FC 50%, #BEE6FD 51%, #A7D9F5 100%);   
 }
 
 .resultados {
