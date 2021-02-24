@@ -48,7 +48,7 @@ body {
     left: 70%;
     top: -400px;
     margin-left: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: Calibri;
     font-weight: 500;
     font-size: 18px;
     color: rgb(255, 255, 255);
@@ -61,24 +61,24 @@ body {
 }
 
 .controle-metas {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 10px;    
 }
 
 .controle-metas p{
     display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Calibri;
     font-size: 16px;
     font-weight: 600;
 }
 
-.controle-metas input {
-    background-color: #7db184;
-    margin-left: 20px;
-    width: 90px;
-    font-size: 18px;
-    border: 1px solid rgb(124, 120, 120);
+.controle-metas input[type=number]{
+    margin-left: 15px;
+    width: 60px;
+    height: 25px;
+    font-size: 15px;
 }
+
 
 .base-geral {
     padding-bottom: 10px;
@@ -89,12 +89,16 @@ body {
     padding-bottom: 20px;
 }
 
+.button-calcular {
+    margin-top: 40px;
+}
+
 .button-calcular .p1 {
     margin-bottom: 5px;
     display: inline-block;
     background-color: rgb(17, 51, 1);
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 400;
     color: #ffffff;
     padding: 5px;
     border-radius: 3px;
@@ -106,7 +110,7 @@ body {
     display: inline-block;
     background-color: rgb(17, 51, 1);
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 400;
     color: #ffffff;
     padding: 5px;
     border-radius: 3px;
@@ -118,7 +122,7 @@ body {
     display: inline-block;
     background-color: rgb(17, 51, 1);
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 400;
     color: #ffffff;
     padding: 5px;
     border-radius: 3px;
@@ -127,6 +131,8 @@ body {
 }
 
 .button-calcular input[type=button] {
+    margin-left: 15px;
+    background-color: rgb(216, 216, 216);
     width: 80px;
     font-size: 15px;
 
@@ -136,5 +142,8 @@ body {
     cursor: pointer;    
 }
 
+.resultados {
+    margin-top: 40px;
+}
 
 
