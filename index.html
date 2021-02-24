@@ -29,26 +29,23 @@
         </div>
 
         <!-- Dados para cálculo das metas -->
-    <div class="controle-metas">
-        <div class="base-geral">
-            <p>Número total de processos na base de ativos:</p><input type="number" name="basegeral"
-                id="basegeral">
-        </div>
-        <div class="base-excecao">
-            <p>Número total de processos que serão contabilizados como exceção:</p><input type="number"
-                name="excecao" id="excecao">
-        </div>
-        <div class="base-acordos">
-            <p>Número total de processos na base de acordos:</p><input type="number" name="baseacordos"
-                id="baseacordos">
-        </div>
+        <div class="controle-metas">
+            <div class="base-geral">
+                <p>Número total de processos na base de ativos:</p><input type="number" name="basegeral" id="basegeral">
+            </div>
+            <div class="base-excecao">
+                <p>Número total de processos que serão contabilizados como exceção:</p><input type="number" name="excecao" id="excecao">
+            </div>
+            <div class="base-acordos">
+                <p>Número total de processos na base de acordos:</p><input type="number" name="baseacordos" id="baseacordos">
+            </div>
 
-        <div class="button-calcular">
-            <p class="p1">Calcular Meta de Improcedência</p><input type="button" value="Calcular" onclick="calcularMetaimp()"><br>
-            <p class="p2">Calcular Meta de Acordos</p><input type="button" value="Calcular" onclick="calcularMetaacordo()"><br>
-            <p class="p3">Calcular Meta de Sem Custo e Outros Motivos</p><input type="button" value="Calcular" onclick="calcularMetasemcusto()"><br>
+            <div class="button-calcular">
+                <p class="p1">Calcular Meta de Improcedência</p><input type="button" value="Calcular" onclick="calcularMetaimp()"><br>
+                <p class="p2">Calcular Meta de Acordos</p><input type="button" value="Calcular" onclick="calcularMetaacordo()"><br>
+                <p class="p3">Calcular Meta de Sem Custo e Outros Motivos</p><input type="button" value="Calcular" onclick="calcularMetasemcusto()"><br>
+            </div>
         </div>
-    </div>
 
 
 
@@ -58,12 +55,7 @@
             <div id="meta-acordo">Resultado da meta de acordos</div>
             <div id="meta-semcusto">Resultado da meta de encerrados sem custo e outros motivos</div>
         </div>
-        
 
-        <!-- Produtividade -->
-        <div class="produt">
-            <p>Produtividade Equipe Indenizatória</p>
-        </div>
 
         <!-- Javascript -->
         <script>
@@ -82,16 +74,16 @@
                 res_imp.innerHTML = `A meta de improcedência é de ${meta_imp_certa} processos.`
             }
 
-            function calcularMetaacordo(){
+            function calcularMetaacordo() {
                 var num_acordo = window.document.getElementById('baseacordos')
                 var res_acordo = window.document.getElementById('meta-acordo')
                 var n_acordo = Number(num_acordo.value)
                 var meta_acordo = n_acordo * 0.091
                 var meta_certa_acordo = meta_acordo.toFixed(1)
                 res_acordo.innerHTML = `A meta de acordos é de ${meta_certa_acordo} processos`
-        }
+            }
 
-        function calcularMetasemcusto() {
+            function calcularMetasemcusto() {
                 var basegeral_semcusto = window.document.getElementById('basegeral')
                 var excecao_semcusto = window.document.getElementById('excecao')
                 var res_semcusto = window.document.getElementById('meta-semcusto')
@@ -107,4 +99,5 @@
             }
         </script>
 </body>
+
 </html>

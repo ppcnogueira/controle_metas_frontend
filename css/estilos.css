@@ -14,11 +14,10 @@ body {
     height: 90px;
     padding-top: 20px;
     padding-left: 10px;
-    background-image: linear-gradient(to top,rgb(17, 51, 1), green 130%);
+    background-image: linear-gradient(to top, rgb(17, 51, 1), green 130%);
 }
 
-
-.titulo h1 {    
+.titulo h1 {
     font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: 600;
@@ -38,47 +37,27 @@ body {
     padding: 10px;
     background-color: rgb(20, 59, 2);
     border-radius: 3px;
-    border:1px solid #000000;
-    box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
-}
-
-.produt {
-    display: inline-block;
-    position: relative;
-    left: 70%;
-    top: -435px;
-    margin-left: 10px;
-    font-family: Calibri;
-    font-weight: 500;
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    margin-top: 10px;
-    padding: 10px;
-    background-color: rgb(17, 51, 1);
-    border-radius: 3px;
-    border:1px solid #000000;
-    box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+    border: 1px solid #000000;
+    box-shadow: inset 0 2px 3px 0 rgba(255, 255, 255, .3), inset 0 -3px 6px 0 rgba(0, 0, 0, .2), 0 3px 2px 0 rgba(0, 0, 0, .2);
 }
 
 .controle-metas {
     margin-top: 30px;
-    margin-left: 10px;    
+    margin-left: 10px;
 }
 
-.controle-metas p{
+.controle-metas p {
     display: inline-block;
-    font-family: Calibri;
-    font-size: 16px;
-    font-weight: 600;
+    font-family: 'Calibri';
+    font-size: 1.3em;
 }
 
-.controle-metas input[type=number]{
+.controle-metas input[type=number] {
     margin-left: 15px;
     width: 60px;
     height: 25px;
     font-size: 15px;
 }
-
 
 .base-geral {
     padding-bottom: 10px;
@@ -97,37 +76,38 @@ body {
     margin-bottom: 5px;
     display: inline-block;
     background-color: rgb(17, 51, 1);
-    font-size: 16px;
+    font-size: 1.2em;
     font-weight: 400;
     color: #ffffff;
     padding: 5px;
     border-radius: 3px;
-    border:1px solid #000000;
-    box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);    
+    border: 1px solid #000000;
+    box-shadow: inset 0 2px 3px 0 rgba(255, 255, 255, .3), inset 0 -3px 6px 0 rgba(0, 0, 0, .2), 0 3px 2px 0 rgba(0, 0, 0, .2);
 }
 
 .button-calcular .p2 {
     display: inline-block;
     background-color: rgb(17, 51, 1);
-    font-size: 16px;
+    font-size: 1.2em;
     font-weight: 400;
     color: #ffffff;
     padding: 5px;
     border-radius: 3px;
-    border:1px solid #000000;
-    box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);      
+    border: 1px solid #000000;
+    box-shadow: inset 0 2px 3px 0 rgba(255, 255, 255, .3), inset 0 -3px 6px 0 rgba(0, 0, 0, .2), 0 3px 2px 0 rgba(0, 0, 0, .2);
 }
+
 .button-calcular .p3 {
     margin-top: 5px;
     display: inline-block;
     background-color: rgb(17, 51, 1);
-    font-size: 16px;
+    font-size: 1.2em;
     font-weight: 400;
     color: #ffffff;
     padding: 5px;
     border-radius: 3px;
-    border:1px solid #000000;
-    box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);      
+    border: 1px solid #000000;
+    box-shadow: inset 0 2px 3px 0 rgba(255, 255, 255, .3), inset 0 -3px 6px 0 rgba(0, 0, 0, .2), 0 3px 2px 0 rgba(0, 0, 0, .2);
 }
 
 .button-calcular input[type=button] {
@@ -146,11 +126,15 @@ body {
 .button-calcular input[type=button]:hover {
     border: 1px solid #ECF7FD;
     box-shadow: 0 0 0 2px #1d1d1d;
-    background: linear-gradient(top, #EAF6FD 0%, #D9F0FC 50%, #BEE6FD 51%, #A7D9F5 100%);   
+    background: linear-gradient(top, #EAF6FD 0%, #D9F0FC 50%, #BEE6FD 51%, #A7D9F5 100%);
 }
 
 .resultados {
-    margin-top: 40px;
+    display: block;
+    font-family: 'Calibri';
+    font-size: 1.3em;
+    margin-top: 3.2rem;
+    margin-left: 10px;
+    color: black;
+    font-weight: normal;
 }
-
-
