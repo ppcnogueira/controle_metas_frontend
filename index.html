@@ -51,9 +51,9 @@
 
         <!-- Resultado das metas -->
         <div class="resultados">
-            <div id="meta-imp">Resultado da meta de improcedência</div>
-            <div id="meta-acordo">Resultado da meta de acordos</div>
-            <div id="meta-semcusto">Resultado da meta de encerrados sem custo e outros motivos</div>
+            <div id="meta-imp"></div>
+            <div id="meta-acordo"></div>
+            <div id="meta-semcusto"></div>
         </div>
 
 
@@ -71,7 +71,7 @@
 
                 var meta_imp = calculo_imp * 0.018
                 var meta_imp_certa = meta_imp.toFixed(1)
-                res_imp.innerHTML = `A meta de improcedência é de ${meta_imp_certa} processos.`
+                res_imp.innerHTML = `A meta de improcedência é de <strong>${meta_imp_certa} </strong>processos.`
             }
 
             function calcularMetaacordo() {
@@ -80,7 +80,7 @@
                 var n_acordo = Number(num_acordo.value)
                 var meta_acordo = n_acordo * 0.091
                 var meta_certa_acordo = meta_acordo.toFixed(1)
-                res_acordo.innerHTML = `A meta de acordos é de ${meta_certa_acordo} processos`
+                res_acordo.innerHTML = `A meta de acordos é de <strong>${meta_certa_acordo} </strong>processos`
             }
 
             function calcularMetasemcusto() {
@@ -95,7 +95,7 @@
 
                 var meta_semcusto = calculo_semcusto * 0.017
                 var meta_semcusto_certa = meta_semcusto.toFixed(1)
-                res_semcusto.innerHTML = `A meta de encerrados sem custo e outros motivos é de ${meta_semcusto_certa} processos.`
+                res_semcusto.innerHTML = `A meta de encerrados sem custo e outros motivos é de <strong>${meta_semcusto_certa} </strong>processos.`
             }
         </script>
 </body>

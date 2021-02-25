@@ -123,11 +123,28 @@
     }
     
     .resultados {
-        display: block;
         margin-top: 40px;
         margin-left: 10px;
         font-family: 'Abel', sans-serif;
         font-size: 1.3em;
         color: black;
         font-weight: normal;
+    }
+    
+    #meta-imp {
+        position: relative;
+        top: -150px;
+        left: 380px;
+    }
+    
+    #meta-acordo {
+        position: relative;
+        top: -135px;
+        left: 340px;
+    }
+    
+    #meta-semcusto {
+        position: relative;
+        top: -123px;
+        left: 480px;
     }
