@@ -1,140 +1,133 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: rgb(240, 242, 245);
-}
-
-.titulo {
-    display: inline-block;
-    width: 100%;
-    height: 90px;
-    padding-top: 20px;
-    padding-left: 10px;
-    background-image: linear-gradient(to top, rgb(17, 51, 1), green 130%);
-}
-
-.titulo h1 {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-weight: 600;
-    font-size: 38px;
-    font-style: normal;
-    text-align: center;
-}
-
-.metas-pade {
-    margin-left: 10px;
-    display: inline-block;
-    font-family: Calibri;
-    font-weight: 400;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    margin-top: 40px;
-    padding: 10px;
-    background-color: rgb(20, 59, 2);
-    border-radius: 3px;
-    border: 1px solid #000000;
-    box-shadow: inset 0 2px 3px 0 rgba(255, 255, 255, .3), inset 0 -3px 6px 0 rgba(0, 0, 0, .2), 0 3px 2px 0 rgba(0, 0, 0, .2);
-}
-
-.controle-metas {
-    margin-top: 30px;
-    margin-left: 10px;
-}
-
-.controle-metas p {
-    display: inline-block;
-    font-family: 'Calibri';
-    font-size: 1.3em;
-}
-
-.controle-metas input[type=number] {
-    margin-left: 15px;
-    width: 60px;
-    height: 25px;
-    font-size: 15px;
-}
-
-.base-geral {
-    padding-bottom: 10px;
-}
-
-.base-acordos {
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-.button-calcular {
-    margin-top: 40px;
-}
-
-.button-calcular .p1 {
-    margin-bottom: 5px;
-    display: inline-block;
-    background-color: rgb(17, 51, 1);
-    font-size: 1.2em;
-    font-weight: 400;
-    color: #ffffff;
-    padding: 5px;
-    border-radius: 3px;
-    border: 1px solid #000000;
-    box-shadow: inset 0 2px 3px 0 rgba(255, 255, 255, .3), inset 0 -3px 6px 0 rgba(0, 0, 0, .2), 0 3px 2px 0 rgba(0, 0, 0, .2);
-}
-
-.button-calcular .p2 {
-    display: inline-block;
-    background-color: rgb(17, 51, 1);
-    font-size: 1.2em;
-    font-weight: 400;
-    color: #ffffff;
-    padding: 5px;
-    border-radius: 3px;
-    border: 1px solid #000000;
-    box-shadow: inset 0 2px 3px 0 rgba(255, 255, 255, .3), inset 0 -3px 6px 0 rgba(0, 0, 0, .2), 0 3px 2px 0 rgba(0, 0, 0, .2);
-}
-
-.button-calcular .p3 {
-    margin-top: 5px;
-    display: inline-block;
-    background-color: rgb(17, 51, 1);
-    font-size: 1.2em;
-    font-weight: 400;
-    color: #ffffff;
-    padding: 5px;
-    border-radius: 3px;
-    border: 1px solid #000000;
-    box-shadow: inset 0 2px 3px 0 rgba(255, 255, 255, .3), inset 0 -3px 6px 0 rgba(0, 0, 0, .2), 0 3px 2px 0 rgba(0, 0, 0, .2);
-}
-
-.button-calcular input[type=button] {
-    margin-left: 20px;
-    height: 25px;
-    padding: 2px 8px;
-    border: 1px solid #F3F3F3;
-    box-shadow: 0 0 0 1px #707070;
-    border-radius: 3px;
-    background: linear-gradient(top, #F2F2F2 0%, #EBEBEB 50%, #DDDDDD 51%, #CFCFCF 100%);
-    font: normal 1.1em sans-serif;
-    color: black;
-    text-decoration: none;
-}
-
-.button-calcular input[type=button]:hover {
-    border: 1px solid #ECF7FD;
-    box-shadow: 0 0 0 2px #1d1d1d;
-    background: linear-gradient(top, #EAF6FD 0%, #D9F0FC 50%, #BEE6FD 51%, #A7D9F5 100%);
-}
-
-.resultados {
-    display: block;
-    margin-top: 40px;
-    margin-left: 10px;
-    font-family: 'Calibri';
-    font-size: 1.3em;
-    color: black;
-    font-weight: normal;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: rgb(240, 242, 245);
+    }
+    
+    .titulo {
+        display: inline-block;
+        width: 100%;
+        height: 100px;
+        padding-top: 20px;
+        padding-left: 10px;
+        background-color: rgba(20, 59, 2, 0.95);
+    }
+    
+    .titulo h1 {
+        font-family: 'Abel', sans-serif;
+        color: #eeedeb;
+        font-weight: 800;
+        font-size: 45px;
+        font-style: normal;
+        text-align: center;
+    }
+    
+    .metas-pade {
+        margin-left: 10px;
+        display: inline-block;
+        font-family: 'Abel', sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        margin-top: 40px;
+        padding: 10px;
+        background-color: rgba(20, 59, 2, 0.85);
+        border-radius: 3px;
+    }
+    
+    .controle-metas {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    
+    .controle-metas p {
+        display: inline-block;
+        font-family: 'Abel', sans-serif;
+        font-size: 1.3em;
+    }
+    
+    .controle-metas input[type=number] {
+        margin-left: 15px;
+        width: 60px;
+        height: 25px;
+        font-size: 15px;
+    }
+    
+    .base-geral {
+        padding-bottom: 10px;
+    }
+    
+    .base-acordos {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .button-calcular {
+        margin-top: 40px;
+        font-family: 'Abel', sans-serif;
+    }
+    
+    .button-calcular .p1 {
+        margin-bottom: 5px;
+        display: inline-block;
+        background-color: rgba(20, 59, 2, 0.75);
+        font-size: 1.2em;
+        font-weight: 400;
+        color: #ffffff;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    
+    .button-calcular .p2 {
+        display: inline-block;
+        background-color: rgba(20, 59, 2, 0.75);
+        font-size: 1.2em;
+        font-weight: 400;
+        color: #ffffff;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    
+    .button-calcular .p3 {
+        margin-top: 5px;
+        display: inline-block;
+        background-color: rgba(20, 59, 2, 0.75);
+        font-size: 1.2em;
+        font-weight: 400;
+        color: #ffffff;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    
+    .button-calcular input[type=button] {
+        margin-left: 20px;
+        height: 23px;
+        padding: 2px 8px;
+        border: 1px solid #F3F3F3;
+        box-shadow: 0 0 0 1px #707070;
+        border-radius: 3px;
+        background: linear-gradient(top, #F2F2F2 0%, #EBEBEB 50%, #DDDDDD 51%, #CFCFCF 100%);
+        font: normal 1.0em sans-serif;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .button-calcular input[type=button]:hover {
+        border: 1px solid #ECF7FD;
+        box-shadow: 0 0 0 2px #1d1d1d;
+        background: linear-gradient(top, #EAF6FD 0%, #D9F0FC 50%, #BEE6FD 51%, #A7D9F5 100%);
+    }
+    
+    .resultados {
+        display: block;
+        margin-top: 40px;
+        margin-left: 10px;
+        font-family: 'Abel', sans-serif;
+        font-size: 1.3em;
+        color: black;
+        font-weight: normal;
+    }
