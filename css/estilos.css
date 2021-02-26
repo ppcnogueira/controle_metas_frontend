@@ -11,16 +11,16 @@
     .titulo {
         display: inline-block;
         width: 100%;
-        height: 100px;
+        height: 80px;
         padding-top: 10px;
         padding-left: 10px;
         background-color: rgb(4, 41, 13);
     }
     
     .titulo h1 {
-        font-family: 'Ramabhadra', sans-serif;
+        font-family: 'Calibri', sans-serif;
         color: white;
-        font-size: 40px;
+        font-size: 48px;
         font-style: normal;
         text-align: center;
     }
@@ -45,8 +45,8 @@
     
     .controle-metas p {
         display: inline-block;
-        font-family: 'Abel', sans-serif;
-        font-size: 1.3em;
+        font-family: 'Arial', sans-serif;
+        font-size: 1.2em;
     }
     
     .controle-metas input[type=number] {
@@ -67,13 +67,13 @@
     
     .button-calcular {
         margin-top: 40px;
-        font-family: 'Abel', sans-serif;
+        font-family: 'Calibri', sans-serif;
     }
     
     .button-calcular .p1 {
         margin-bottom: 5px;
         display: inline-block;
-        background-color: rgba(20, 59, 2, 0.75);
+        background-color: rgb(4, 41, 13);
         font-size: 1.2em;
         font-weight: 400;
         color: #ffffff;
@@ -83,7 +83,7 @@
     
     .button-calcular .p2 {
         display: inline-block;
-        background-color: rgba(20, 59, 2, 0.75);
+        background-color: rgb(4, 41, 13);
         font-size: 1.2em;
         font-weight: 400;
         color: #ffffff;
@@ -94,7 +94,7 @@
     .button-calcular .p3 {
         margin-top: 5px;
         display: inline-block;
-        background-color: rgba(20, 59, 2, 0.75);
+        background-color: rgb(4, 41, 13);
         font-size: 1.2em;
         font-weight: 400;
         color: #ffffff;
@@ -124,7 +124,7 @@
     .resultados {
         margin-top: 40px;
         margin-left: 10px;
-        font-family: 'Abel', sans-serif;
+        font-family: 'Calibri', sans-serif;
         font-size: 1.3em;
         color: black;
         font-weight: normal;
@@ -133,8 +133,8 @@
     #meta-imp {
         display: inline-block;
         position: relative;
-        top: -154px;
-        left: 380px;
+        top: -145px;
+        left: 395px;
         padding: 2px;
     }
     
@@ -146,6 +146,6 @@
     
     #meta-semcusto {
         position: relative;
-        top: -123px;
-        left: 480px;
+        top: -125px;
+        left: 520px;
     }
